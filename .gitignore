@@ -67,3 +67,4 @@ secrets.json
 
 # ── Demo users — generated, not committed ─────────────────────────────────────
 demo/users/
+*.amltmp
