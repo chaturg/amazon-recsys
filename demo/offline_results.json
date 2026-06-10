@@ -1,0 +1,45 @@
+{
+  "_comment": "Pre-computed offline metrics for spider chart. Source: simulated (flip to real when eval completes).",
+  "_generated": "2026-06-09",
+  "_source": "simulated",
+
+  "baseline": {
+    "config": "config1_baseline",
+    "label": "Baseline (Config 1)",
+    "color": "#9ca3af",
+    "style": "dashed",
+    "metrics": {
+      "ndcg":     0.0487,
+      "recall":   0.0634,
+      "mrr":      0.0412,
+      "hitrate":  0.0891,
+      "coverage": 0.2156,
+      "kpi":      0.0604
+    }
+  },
+
+  "winning": {
+    "config": "config3_full_system",
+    "label": "Full System (Config 3)",
+    "color": "#3b82f6",
+    "style": "solid",
+    "metrics": {
+      "ndcg":     0.0724,
+      "recall":   0.0934,
+      "mrr":      0.0612,
+      "hitrate":  0.1287,
+      "coverage": 0.2734,
+      "kpi":      0.0882
+    }
+  },
+
+  "spider_axes": [
+    {"key": "ndcg",     "label": "NDCG@10",    "scale": 0.15},
+    {"key": "recall",   "label": "Recall@10",  "scale": 0.15},
+    {"key": "mrr",      "label": "MRR",        "scale": 0.15},
+    {"key": "hitrate",  "label": "HitRate@10", "scale": 0.20},
+    {"key": "coverage", "label": "Coverage",   "scale": 0.40}
+  ],
+
+  "_spider_note": "scale is the max value for that axis (used to normalize 0-1 for the chart polygon)"
+}
